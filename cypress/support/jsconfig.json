@@ -1,0 +1,2 @@
+//this will autocomplete our cypress comands
+{"include": ["./node_modules/cypress", "cypress/**/*.js"]}

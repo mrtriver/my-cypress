@@ -23,3 +23,21 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('login', (email,password )=>{
+    // cy.visit('http://automationpractice.com/index.php');
+    cy.visit('https://hypnotes.net/login');
+    cy.get('.btn-primary').click();
+    cy.get('.mt-40 > .single-input').type(email);
+    cy.get(':nth-child(6) > .single-input').type(password);
+    cy.get('.genric-btn').click();
+
+    // cy.get('#SubmitLogin > span').click();
+})
+// Cypress.Commands.add('loginHypnotes', (email, password)=> {
+//     cy.visit('https://hypnotes.net/login');
+//     cy.get('.hide > [href="/login"]').click();
+//         cy.get('.mt-40 > .single-input').type(email);
+//         cy.get(':nth-child(6) > .single-input').type(password);
+//         cy.get('.genric-btn').click();
+// })
+const faker = require('faker');
