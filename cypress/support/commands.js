@@ -36,3 +36,4 @@ Cypress.Commands.add('login', (email,password )=>{
 
 const faker = require('faker');
 require('@4tw/cypress-drag-drop')
+import 'cypress-file-upload';
