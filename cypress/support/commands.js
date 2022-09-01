@@ -33,11 +33,6 @@ Cypress.Commands.add('login', (email,password )=>{
 
     // cy.get('#SubmitLogin > span').click();
 })
-// Cypress.Commands.add('loginHypnotes', (email, password)=> {
-//     cy.visit('https://hypnotes.net/login');
-//     cy.get('.hide > [href="/login"]').click();
-//         cy.get('.mt-40 > .single-input').type(email);
-//         cy.get(':nth-child(6) > .single-input').type(password);
-//         cy.get('.genric-btn').click();
-// })
+
 const faker = require('faker');
+require('@4tw/cypress-drag-drop')

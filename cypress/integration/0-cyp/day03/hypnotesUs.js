@@ -27,8 +27,9 @@ describe('Various tests in Hypnotes', () => {
    cy.get('#occupation').type('QA');
    cy.get('#postal').type('H1R3J5');
    cy.get(':nth-child(9) > :nth-child(2) > .ant-select > .ant-select-selector').click();
-   cy.get('[title="Turkey"] > .ant-select-item-option-content').click();
+   cy.get('[title="Andora"] > .ant-select-item-option-content').click();
     cy.get('#address').type(address);
+    
 
 
 
